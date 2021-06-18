@@ -10,30 +10,32 @@
     <div id="app">
       <!-- Add Item Part -->
       <div id="addItem" class="container">
-        <h1>Add Item</h1>
-        <div class="addForm">
-          <div class="formItem">
-            <label for="Item">Item Name</label>
-            <input
-              type="text"
-              name="itemName"
-              id="addItemName"
-              placeholder="Add Item Name"
-              required
-            />
+        <div class="form-section">
+          <h1>Add Item</h1>
+          <div class="addForm">
+            <div class="formItem">
+              <label for="Item">Item Name</label>
+              <input
+                type="text"
+                name="itemName"
+                id="addItemName"
+                placeholder="Add Item Name"
+                required
+              />
+            </div>
+            <div class="formItem quant">
+              <label for="Quantity">Quantity</label>
+              <input
+                type="number"
+                name="itemQuantity"
+                id="addItemQuantity"
+                placeholder="Add Item Quantity"
+                min="0"
+                required
+              />
+            </div>
+            <button class="add" type="button">Add Item</button>
           </div>
-          <div class="formItem quant">
-            <label for="Quantity">Quantity</label>
-            <input
-              type="number"
-              name="itemQuantity"
-              id="addItemQuantity"
-              placeholder="Add Item Quantity"
-              min="1"
-              required
-            />
-          </div>
-          <button class="add" type="button">Add Item</button>
         </div>
         <div class="groceryList">
           <h1>Grocery List</h1>
@@ -43,31 +45,34 @@
 
       <!-- Edit Item Part -->
       <div id="editItem" class="container hid">
-        <h1>Edit Item</h1>
-        <div class="editForm">
-          <div class="formItem">
-            <label for="Item">Item Name</label>
-            <input
-              type="text"
-              name="itemName"
-              id="editItemName"
-              placeholder="Add Item Name"
-              required
-            />
+        <div class="form-section">
+          <h1>Edit Item</h1>
+          <div class="editForm">
+            <div class="formItem">
+              <label for="Item">Item Name</label>
+              <input
+                type="text"
+                name="itemName"
+                id="editItemName"
+                placeholder="Add Item Name"
+                required
+              />
+            </div>
+            <div class="formItem quant">
+              <label for="Quantity">Quantity</label>
+              <input
+                type="number"
+                name="itemQuantity"
+                id="editItemQuantity"
+                placeholder="Add Item Quantity"
+                min="0"
+                required
+              />
+            </div>
+            <button class="edit" type="button">Edit Item</button>
           </div>
-          <div class="formItem quant">
-            <label for="Quantity">Quantity</label>
-            <input
-              type="number"
-              name="itemQuantity"
-              id="editItemQuantity"
-              placeholder="Add Item Quantity"
-              min="1"
-              required
-            />
-          </div>
-          <button class="edit" type="button">Edit Item</button>
         </div>
+
         <div class="groceryList">
           <h1>Grocery List</h1>
           <div class="listItem"></div>
@@ -75,6 +80,6 @@
       </div>
     </div>
 
-    <script type="module" src="./src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
