@@ -1,5 +1,3 @@
-
-//let addedItems = 0;
 const itemList = document.querySelectorAll(".listItem");
 
 let addedItems;
@@ -110,11 +108,6 @@ addButton.addEventListener("click", function () {
 
   return false;
 });
-// form[0].onsubmit = (evt) => {
-//   evt.preventDefault();
-//   console.log(evt.target);
-
-// };
 
 // onsubmit handler for submitting edit item form
 const edit = document.querySelector(".edit");
@@ -143,31 +136,4 @@ edit.addEventListener("click", function () {
   currentEditItem = "";
   alert("Item Updated Successfully");
 });
-// form[1].onsubmit = (evt) => {
-//   evt.preventDefault();
-//   const editItemIndex = addedItems.get(currentEditItem).index;
-//   addedItems.delete(currentEditItem);
-//   let inputVal = document.querySelectorAll(".editForm input");
-//   let name = inputVal[0].value;
-//   let quantity = Number(inputVal[1].value);
-//   if (addedItems.has(name)) {
-//     // If editted name is already present
-//     const prev = addedItems.get(name).quant;
-//     const ind = addedItems.get(name).index;
-//     addedItems.set(name, {
-//       index: editItemIndex,
-//       quant: prev + quantity // increamenting quantitiy if item already present
-//     });
-//   } else {
-//     addedItems.set(name, {
-//       index: editItemIndex,
-//       quant: quantity
-//     });
-//   }
-//   fillList();
-//   document.querySelector("#editItem").classList.toggle("hid");
-//   form[1].reset();
-//   currentEditItem = "";
-//   alert("Item Updated Successfully");
-//   return false;
-// };
+
