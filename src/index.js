@@ -1,4 +1,4 @@
-import "./styles.css";
+
 //let addedItems = 0;
 const itemList = document.querySelectorAll(".listItem");
 
