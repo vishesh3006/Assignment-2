@@ -57,7 +57,9 @@ if (!localStorage.map) {
 // onClick handler for Edit Button
 function onEditHandler(name) {
   const editItem = document.querySelector("#editItem");
+  const addItem = document.querySelector("#addItem");
   editItem.classList.toggle("hid"); //Showing Edit Part
+  addItem.classList.toggle("hid");
   editItem.scrollIntoView({ behavior: "smooth" });
   const inputFeild = document.querySelectorAll(".editForm input");
   currentEditItem = name;
@@ -105,8 +107,6 @@ addButton.addEventListener("click", function () {
   inputVal[0].value = "";
   inputVal[1].value = "";
   fillList();
-
-  return false;
 });
 
 // onsubmit handler for submitting edit item form
@@ -133,7 +133,7 @@ edit.addEventListener("click", function () {
   }
   fillList();
   document.querySelector("#editItem").classList.toggle("hid");
+  document.querySelector("#addItem").classList.toggle("hid");
   currentEditItem = "";
   alert("Item Updated Successfully");
 });
-
