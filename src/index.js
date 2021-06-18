@@ -102,8 +102,8 @@ addButton.addEventListener("click", function () {
     });
   }
   console.log(numOfItems);
-  inputVal[0].setAttribute("value", "");
-  inputVal[1].setAttribute("value", "");
+  inputVal[0].value = "";
+  inputVal[1].value = "";
   fillList();
 
   return false;
