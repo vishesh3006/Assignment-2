@@ -17,6 +17,13 @@ body {
   /* border: 1px solid #000; */
 }
 
+.add,
+.edit {
+  padding: 3% 5%;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
 #itemQuantity {
   max-width: 200px;
 }
