@@ -89,6 +89,14 @@ addButton.addEventListener("click", function () {
   let inputVal = document.querySelectorAll("input");
   let name = inputVal[0].value;
   let quantity = Number(inputVal[1].value);
+  if (name === "") {
+    alert("Enter the item name");
+    return;
+  }
+  if (quantity === 0) {
+    alert("Enter Quntity");
+    return;
+  }
   if (addedItems.has(name)) {
     // If new item is already present
     const prev = addedItems.get(name).quant;
@@ -117,6 +125,14 @@ edit.addEventListener("click", function () {
   let inputVal = document.querySelectorAll(".editForm input");
   let name = inputVal[0].value;
   let quantity = Number(inputVal[1].value);
+  if (name === "") {
+    alert("Enter the item name");
+    return;
+  }
+  if (quantity === 0) {
+    alert("Enter Quntity");
+    return;
+  }
   if (addedItems.has(name)) {
     // If editted name is already present
     const prev = addedItems.get(name).quant;
